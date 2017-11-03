@@ -261,21 +261,21 @@ Re-add mobile padding for yahoo mail OSX but not yahoo mail desktop
 
 
 ## Changelog
-	3/11/17 v1.1.2
+	3/11/17 v1.0
 	- Readme update
 	- Generic example template added
 
-	20/7/17 v1.1.1
+	20/7/17 v0.3
 	- Yarn now the preferred package manager
 	- Overhaul example project in repo
 	- Combining latest techniques from other projects to fix Yahoo or outlook issues
 	- Massive readme update
 
-	21/6/17 v1.1.0
+	21/6/17 v0.2
 	- Added S3 bucket upload functionality
 	- Added Nodemailer for local sending
 	
-	16/6/17 v1.0.0
+	16/6/17 v0.1
 	- Started changelog
 	- foundation-emails updated to develop branch to resolve current issues in template
 	- package.json dependencies updated to v7 of node
