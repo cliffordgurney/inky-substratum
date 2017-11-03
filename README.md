@@ -54,12 +54,12 @@ As long as you're using v1.0.0 of this project all you have to do is delete your
 
 Command line  | Description
 ---|---
-`yarn || npm i` | Use yarn to install dependencies
-`yarn start || npm start` | Runs watch task development build without inlining
-`yarn build || npm run build` | Runs watch task with inlined CSS - **Note:** Preferred method, as it will show accurately the hierarchy of CSS
-`yarn zip || npm run zip` | Runs `build` script and then zips all your code/images, if you have multiple `HTML` files then it will create a `[name].zip` for each file with `/assets/` included. Useful for packaging up templates for [Mailchimp](https://mailchimp.com/) or [Campaign Monitor](https://www.campaignmonitor.com/).
-`yarn upload || npm run upload` | Runs `build` script and then uploads all your code/images
-`yarn send || npm run send` | Runs `build` and `upload` script then prompts which template and email list to send
+`yarn` | Use yarn to install dependencies
+`yarn start` | Runs watch task development build without inlining
+`yarn build` | Runs watch task with inlined CSS - **Note:** Preferred method, as it will show accurately the hierarchy of CSS
+`yarn zip` | Runs `build` script and then zips all your code/images, if you have multiple `HTML` files then it will create a `[name].zip` for each file with `/assets/` included. Useful for packaging up templates for [Mailchimp](https://mailchimp.com/) or [Campaign Monitor](https://www.campaignmonitor.com/).
+`yarn upload` | Runs `build` script and then uploads all your code/images
+`yarn send` | Runs `build` and `upload` script then prompts which template and email list to send
 
 
 ## Config
