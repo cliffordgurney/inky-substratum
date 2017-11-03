@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "year": 2017,
+    "client": "parent-folder",
+    "job": "child-folder"
+  },
+  "aws": {
+    "region": "us-east-1",
+    "accessKeyId": "YOUR_ACCOUNT_KEY",
+    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
+    "params": {
+        "Bucket": "THIS_IS_JUST_AN_EXAMPLE"
+    },
+    "url": "http://s3-url-or-site-url-if-s3-hosting-is-on.com"
+  },
+  "mailgun": {
+    "user": "MAILGUN_USER",
+    "pass": "MAILGUN_PASS"
+  },
+  "testing": {
+    "from": "Your Name <your-email>",
+    "lists": {
+      "first_list": "list-emails@youwant.com, cc_this_email_aswell@cc.com"
+    }
+  }
+}

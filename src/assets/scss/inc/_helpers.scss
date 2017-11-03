@@ -1,0 +1,112 @@
+
+// 
+// Generic Helpers
+// These are for generic fixes to templates
+// ------------------------------ //
+
+body {
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	display: inline-block;
+}
+// Fixes issue in Outlook 07/10/13/16
+// Where A tags will remove P tag margins
+p a {
+	Margin: inherit;
+	margin: inherit;
+}
+
+// Fixes hyphens
+span,
+p,
+._remove-hyphens {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+// Force grid to be 320px in half
+// required only if padding/width is causing issues
+// Grid.scss override
+// .collapse td.large-6.first, .collapse th.large-6.first, .collapse td.large-6.last, .collapse th.large-6.last {
+// 	width: 320px;
+// }
+.columns.collapse, .column.collapse, .columns.collapse, .column.collapse {
+	padding-bottom: 0px !important;
+}
+
+
+//
+// Multi-use Backgrounds
+// ------------------------------ //
+
+table, td, th {
+	.bg-img {
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.bg-tile {
+		background-repeat: repeat;
+	}
+	.bg-white {
+		background-color: $white;
+	}
+	.bg-black {
+		background-color: $black;
+	}
+	.bg-transparent {
+		background-color: transparent;
+	}
+}
+
+
+// Override color defaults depending on background
+.bg-black {
+	body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
+		color: $white;
+	}
+}
+
+
+// 
+// Adjust Mobile Gutter Margin
+// ------------------------------ //
+@media screen and (max-width: $global-breakpoint) {
+
+	// Custom mobile gutter
+	td.large-12.last, th.large-12.last,
+	td.large-12.first, th.large-12.first,
+	table.body .column, table.body .columns {
+	    padding-left: $global-gutter-mobile !important;
+	    padding-right: $global-gutter-mobile !important;    
+	}
+	
+	// Custom mobile spacer sizes
+	.spacer {
+		&.small-size-20 {
+			td {
+				height: 20px !important;
+				font-size: 20px !important;
+			    line-height: 20px !important;
+			}
+		}
+	}
+}
+
+
+
+//
+// Hacky yahoo mail responsive hack
+// NOTE: Use with testing
+// ------------------------------ //
+
+@media yahoo {
+    td.large-12.last, th.large-12.last,
+    td.large-12.first, th.large-12.first,
+    table.body .column, table.body .columns {
+        padding-left: 0 !important;
+        padding-right: 0 !important;    
+    }
+}

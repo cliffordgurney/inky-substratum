@@ -1,0 +1,225 @@
+include ../assets/_pug-mixins
+//- Split important or convoluted parts of your partials in this /partials folder using .pug
+
+wrapper
+    container.article_header_container
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td align="center" valign="top" class="link_wrap">
+                    <table id="article_01" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="show">
+                        <tr>
+                            <td>
+                                <a href="#article_01">
+                                    row
+                                        //- Article Header
+                                        columns(small="12" large="12").article_header_wrap
+                                            row
+                                                columns(small="12" large="12").article_header
+                                                    a(href="#article_01" target="_self")
+                                                        span.article_header AN OPEN LETTER FROM A.K
+                                            row
+                                                columns(small="12" large="12").collapse
+                                                    a(href="#article_01" target="_self")
+                                                        span.article_link.
+                                                            <span class=highlight>READ FULL ARTICLE</span> / 2 MIN READ
+
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="link">
+                                    <div class="inn">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" valign="top">
+
+                                                    //- Article
+                                                    wrapper
+                                                        row
+                                                            columns(small="12" large="12").bg-dark-gray
+                                                                row.collapse
+                                                                    columns(small="12" large="12").collapse
+                                                                        //- INTERNAL ANCHOR
+                                                                        a(name="article_01")
+                                                                        //- 
+                                                                        img(src="{{data.img_dir}}/article-header.jpg")
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_subtitle ANDREW KNOTT
+                                                                        br
+                                                                        span.article_header--primary RIDING THE AGILE WAVE
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        p.
+                                                                            Marketing is abuzz with talk of Agile. But what does ‘working Agile’ really mean for our teams. Head of Consumer Marketing Programs, Laura Wilson, is excited about the opportunity ahead. “The clarity, the volume of delivery, the pace, the continuous improvements, the wins and moments to celebrate as a team, the collaboration, the shared goals and objectives, the simplicity, the flexibility – so many things,” says Laura.
+
+                                                                row
+                                                                    columns(small="12" large="12").script-center
+                                                                        span.font_big--serif-white "Donec ornare, erat vitae bibendum elementum, purus est rutblandit lectus"
+
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_header Belynda, Lynda + Laura’s top tips for making Agile work:
+                                                                        ul
+                                                                            li Attend all the meetings or send a delegate, never leave a vacant spot. Agile doesn’t work if no one turns up to the meetings.
+                                                                            li Own your deliverables – know your own deliverables and focus on what needs to be done.
+                                                                            li Call out any  roadblocks – and aim to resolve them as a group.
+                                                                            li Be prepared to think and work differently, it’s a wholesale change to the way we do things and that will feel a little uncomfortable… in the beginning!
+                                                                            li Don’t be afraid of the odd failure.
+                                                                            li Take every opportunity to learn more and immerse yourself in Agile.
+                                                                            li Be open-minded, be curious and ask questions, try new ways of working and encourage others.
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="25" class="em_ht">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td>
+                                <table id="#adv" width="100%" border="0" cellspacing="0" cellpadding="0" class="show">
+                                    <tr>
+                                        <td>
+                                            <a href="#adv">
+                                                row
+                                                    //- Article Header
+                                                    columns(small="12" large="12").article_header_wrap
+                                                        row
+                                                            columns(small="12" large="12").article_header
+                                                                a(href="#article_01" target="_self")
+                                                                    span.article_header AN OPEN LETTER FROM A.K
+                                                        row
+                                                            columns(small="12" large="12").collapse
+                                                                a(href="#article_01" target="_self")
+                                                                    span.article_link.
+                                                                        <span class=highlight>READ FULL ARTICLE</span> / 2 MIN READ
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="link">
+                                                <div class="inn">
+                                                    //- Article
+                                                    wrapper
+                                                        row
+                                                            columns(small="12" large="12").bg-dark-gray
+                                                                row.collapse
+                                                                    columns(small="12" large="12").collapse
+                                                                        //- INTERNAL ANCHOR
+                                                                        a(name="article_01")
+                                                                        //- 
+                                                                        img(src="{{data.img_dir}}/article-header.jpg")
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_subtitle ANDREW KNOTT
+                                                                        br
+                                                                        span.article_header--primary RIDING THE AGILE WAVE
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        p.
+                                                                            Marketing is abuzz with talk of Agile. But what does ‘working Agile’ really mean for our teams. Head of Consumer Marketing Programs, Laura Wilson, is excited about the opportunity ahead. “The clarity, the volume of delivery, the pace, the continuous improvements, the wins and moments to celebrate as a team, the collaboration, the shared goals and objectives, the simplicity, the flexibility – so many things,” says Laura.
+
+                                                                row
+                                                                    columns(small="12" large="12").script-center
+                                                                        span.font_big--serif-white "Donec ornare, erat vitae bibendum elementum, purus est rutblandit lectus"
+
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_header Belynda, Lynda + Laura’s top tips for making Agile work:
+                                                                        ul
+                                                                            li Attend all the meetings or send a delegate, never leave a vacant spot. Agile doesn’t work if no one turns up to the meetings.
+                                                                            li Own your deliverables – know your own deliverables and focus on what needs to be done.
+                                                                            li Call out any  roadblocks – and aim to resolve them as a group.
+                                                                            li Be prepared to think and work differently, it’s a wholesale change to the way we do things and that will feel a little uncomfortable… in the beginning!
+                                                                            li Don’t be afraid of the odd failure.
+                                                                            li Take every opportunity to learn more and immerse yourself in Agile.
+                                                                            li Be open-minded, be curious and ask questions, try new ways of working and encourage others.
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td>
+                                <table id="app" width="100%" border="0" cellspacing="0" cellpadding="0" class="show">
+                                    <tr>
+                                        <td>
+                                            <a href="#app">
+                                                row
+                                                    //- Article Header
+                                                    columns(small="12" large="12").article_header_wrap
+                                                        row
+                                                            columns(small="12" large="12").article_header
+                                                                a(href="#article_01" target="_self")
+                                                                    span.article_header AN OPEN LETTER FROM A.K
+                                                        row
+                                                            columns(small="12" large="12").collapse
+                                                                a(href="#article_01" target="_self")
+                                                                    span.article_link.
+                                                                        <span class=highlight>READ FULL ARTICLE</span> / 2 MIN READ
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="link">
+                                                <div class="inn">
+                                                    //- Article
+                                                    wrapper
+                                                        row
+                                                            columns(small="12" large="12").bg-dark-gray
+                                                                row.collapse
+                                                                    columns(small="12" large="12").collapse
+                                                                        //- INTERNAL ANCHOR
+                                                                        a(name="article_01")
+                                                                        //- 
+                                                                        img(src="{{data.img_dir}}/article-header.jpg")
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_subtitle ANDREW KNOTT
+                                                                        br
+                                                                        span.article_header--primary RIDING THE AGILE WAVE
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        p.
+                                                                            Marketing is abuzz with talk of Agile. But what does ‘working Agile’ really mean for our teams. Head of Consumer Marketing Programs, Laura Wilson, is excited about the opportunity ahead. “The clarity, the volume of delivery, the pace, the continuous improvements, the wins and moments to celebrate as a team, the collaboration, the shared goals and objectives, the simplicity, the flexibility – so many things,” says Laura.
+
+                                                                row
+                                                                    columns(small="12" large="12").script-center
+                                                                        span.font_big--serif-white "Donec ornare, erat vitae bibendum elementum, purus est rutblandit lectus"
+
+                                                                row
+                                                                    columns(small="12" large="12")
+                                                                        span.article_header Belynda, Lynda + Laura’s top tips for making Agile work:
+                                                                        ul
+                                                                            li Attend all the meetings or send a delegate, never leave a vacant spot. Agile doesn’t work if no one turns up to the meetings.
+                                                                            li Own your deliverables – know your own deliverables and focus on what needs to be done.
+                                                                            li Call out any  roadblocks – and aim to resolve them as a group.
+                                                                            li Be prepared to think and work differently, it’s a wholesale change to the way we do things and that will feel a little uncomfortable… in the beginning!
+                                                                            li Don’t be afraid of the odd failure.
+                                                                            li Take every opportunity to learn more and immerse yourself in Agile.
+                                                                            li Be open-minded, be curious and ask questions, try new ways of working and encourage others.
+                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>

@@ -1,0 +1,43 @@
+include ../assets/_pug-mixins
+//- Poll
+container
+    row
+        columns(small="12" large="12").bg-white
+            row
+                columns(small="12" large="12")
+                    spacer(size="30")
+                    p.article_subtitle--gray Polls
+                    p.article_header--primary Your opinion matters
+
+
+            row.poll
+                columns(small="12" large="12")
+                    span.font_big--serif-black What would you like to hear more about in the next issue?
+                    br
+                    br
+                    form
+                        +able.poll
+                            +poll-option('1', 'a') A: Agile
+                            +poll-option('1', 'b') B: New ways of working
+                            +poll-option('1', 'c') C: Updates on Current and recent campaigns
+                            +poll-option('1', 'd') D: Your marketing team members 
+
+            row.poll
+                columns(small="12" large="12")
+                    span.font_big--serif-black Who in marketing would you like to find out more about?
+                    br
+                    br
+                    form
+                        +able.poll
+                            +poll-option('2', 'a') A: Andrew Farries
+                            +poll-option('2', 'b') B: Julia Edwards
+                            +poll-option('2', 'c') C: Faycal Ben Abdellaziz
+
+
+            row.space
+                columns(small="12" large="12")
+                    +able
+                        tr
+                            td.font_big--serif-black Thanks for answering.
+                    br
+                    span.black-text Your answers will help shape your user experience in the future open eDMs that you receive.

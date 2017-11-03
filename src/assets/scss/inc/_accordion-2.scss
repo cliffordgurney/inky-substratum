@@ -1,0 +1,95 @@
+// //
+// // Accordion V2
+// // Refer to partial accordion-2 for HTML
+// // --------------------------------------- //
+
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+//     input:not(:checked) ~ .m-collapsed {
+//       max-height: 9999px;
+//       -webkit-transition: none;
+//     }
+//     .m-collapsed {
+//       max-height: 0;
+//       overflow: hidden;
+//       -webkit-transition: max-height 0s 0.45s;
+
+//     }
+
+//     input:checked ~ .m-collapsed > .animated {
+//       -webkit-animation-name: bounceOutUp;
+//     }
+//     .animated {
+//       -webkit-animation-duration: 0.5s;
+//       -webkit-animation-fill-mode: both;
+//     }
+//     .bounceInDown {
+//       -webkit-animation-name: bounceInDown;
+//     }
+//     .accordion {
+//       display: block !important;
+//       width: 100% !important;
+//     }
+//     .accordion label {
+//       display: block;
+//       background: #000;
+//     }
+//     .accordion,
+//     .accordion .animated div {
+//       padding: 0 !important;
+//     }
+//     .m-hide {
+//       display: none !important;
+//     }
+//     .m-show {
+//       display: block !important;
+//       max-height: none !important;
+//       overflow: visible !important;
+//     }
+// }
+
+
+// @-webkit-keyframes bounceInDown {
+//     0%, 60%, 75%, 90%, 100% {
+//       // -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+//     }
+//     0% {
+//       -webkit-transform: translate3d(0, -150%, 0);
+//     }
+//     100% {
+//       -webkit-transform: none;
+//     }
+// }
+
+
+// @-webkit-keyframes bounceOutUp {
+//     20% {
+//       -webkit-transform: translate3d(0, -1%, 0);
+//       transform: translate3d(0, -1%, 0);
+//     }
+//     40%,
+//     45% {
+//       opacity: 1;
+//       -webkit-transform: translate3d(0, 2%, 0);
+//     }
+//     100% {
+//       opacity: 0;
+//       -webkit-transform: translate3d(0, -150%, 0);
+//     }
+// }
+
+// @-webkit-keyframes bounceFeedback {
+//     20% {
+//       -webkit-transform: translate3d(0, -1%, 0);
+//       transform: translate3d(0, -1%, 0);
+//     }
+//     40%,
+//     45% {
+//       opacity: 1;
+//       -webkit-transform: translate3d(0, 2%, 0);
+//     }
+//     100% {
+//       opacity: 0.7;
+//       -webkit-transform: translate3d(0, 0%, 0);
+//     }
+// }

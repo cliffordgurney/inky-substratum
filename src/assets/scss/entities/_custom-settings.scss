@@ -1,0 +1,60 @@
+// Overwrite default Global values here
+// DO NOT Edit _settings.scss, copy the blocks you need here
+
+//  Custom Emails Settings
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+
+
+// 1. Global
+// ---------
+
+// Name your colors!
+// http://chir.ag/projects/name-that-color/
+
+$primary-color: #7acdf8; 
+$secondary-color: #777777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-grey: #f3f3f3;
+$stone-grey: #f1f2f3;
+$wildsand: #F5F5F5;
+$grey: #888b8c;
+$pumice: #cdd0ce;
+$black: #000000;
+$white: #ffffff;
+$cornflower-blue: #5877F4;
+$pre-color: #ff6908;
+$global-width: 600px;
+$global-width-small: 95%;
+$global-gutter: 40px;
+$global-gutter-mobile: 20px;
+$body-background: $wildsand;
+$container-background: $white;
+$global-padding: 24px;
+$global-margin: 24px;
+$global-radius: 3px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+
+// 4. Typography
+// -------------
+
+$body-font-family: Helvetica, Arial, sans-serif;
+$serif-font-family: Helvetica, Arial, sans-serif;
+$global-line-height: 1.4;
+$global-font-size: 18px;
+$global-font-color: $grey;
+$global-letter-spacing: 4px;

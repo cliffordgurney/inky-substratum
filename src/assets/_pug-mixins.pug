@@ -1,0 +1,53 @@
+//-
+    Table mixin
+    Simply type "+able" instead of "table" to get default cellpadding, cellspacing and border attributes
+mixin able
+    table(cellpadding="0", cellspacing="0", border="0")&attributes(attributes)
+        block
+
+
+//-
+    List bullet
+mixin able-product_terms_bullet
+    +able(width="5" style="width: 5px;" align="left")
+        tr
+            td.no-line(width="5" height="7" style="width: 5px; height: 7px;")
+        tr
+            td.no-line(width="5" height="5" style="width: 5px; height: 5px; background-color: #e41b13")
+
+//- 
+    Example of a Blockquote
+mixin blockquote
+    table(width="100%" cellpadding="0" cellspacing="0")
+        tr
+            td.script-center
+                span.font_big--serif-white
+                    block
+
+//- 
+    Poll Options
+    Using input fields in emails! Check your client requirements before using this feature
+mixin poll-option(id, n)
+    tr
+        td.poll_option
+            a(href='#poll-'+id+'-'+n)
+                <!--[if !mso]>
+                <!-- -->
+                input(type="radio" id='poll-'+id+'-'+n style="display: none !important" class="hide" name='poll-'+id)
+                <!--<![endif]-->
+                label(for='poll-'+id+'-'+n)
+                    bl
+
+//- 
+    Internal Anchor Mixin
+    --- This DOES NOT work on OSX Mail FYI @ChrisJames ---
+mixin poll-anchors(id,ns)
+    each ns in n
+        a(name='poll-'+id+'-'+n)
+
+mixin back-to-top
+    +able(width="100%").bg-black.show-for-large
+        tr
+            td.back-to-top
+                a(href="#top")
+                    img(src="{{data.img_dir}}top.png" width="245").float-right

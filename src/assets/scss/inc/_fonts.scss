@@ -1,0 +1,14 @@
+// 
+// Check compatibility with Email clients before using custom fonts!
+// 
+// @font-face {
+//     font-family: 'CustomFont';
+//     src: url('http://path/to/font'); /* IE9 Compat Modes */
+//     src: url('http://path/to/font') format('embedded-opentype'), /* IE6-IE8 */
+//          url('http://path/to/font') format('woff'), /* Modern Browsers */
+//          url('http://path/to/font') format('truetype'), /* Safari, Android, iOS */
+//          url('http://path/to/font') format('svg'); /* Legacy iOS */
+//     font-style: normal;
+//     font-weight: normal;
+//     text-rendering: optimizeLegibility;
+// }

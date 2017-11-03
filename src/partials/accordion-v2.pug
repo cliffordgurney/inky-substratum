@@ -1,0 +1,159 @@
+include ../assets/_pug-mixins
+//- Article Nav
+wrapper.body
+    container
+        //- INTERNAL ANCHOR
+        a(name="article_list")
+        //- ARTICLES
+        .accordion
+            <!--[if !mso]>
+            <!-- --><input type="checkbox" id="radio-1" style="display: none !important" class="hide" checked="">
+            <!--<![endif]-->
+            label(for="radio-1")
+                wrapper.article_header_container
+                    row
+                        //- Article Header
+                        columns(small="12" large="12").article_header_wrap
+                            row
+                                columns(small="12" large="12").article_header
+                                    table
+                                        tr
+                                            td(valign="middle")
+                                                a(href="#article_01" target="_self").article_header.
+                                                    Lorem Ipsum
+                                            td(valign="middle").set-width
+                                                div.title.hide
+                                                    spacer(size="10")
+                                                    img(src="{{data.img_dir}}/arrow-down.png")
+
+            .m-collapsed
+                .animated.bounceInDown
+                    //- Article
+                    wrapper
+                        row.collapse.bg-dark-gray
+                            columns(small="12" large="12")
+                                //- INTERNAL ANCHOR
+                                a(name="article_01")
+                                //-
+                                img(src="{{data.img_dir}}/article-header.jpg")
+                        row
+                            columns(small="12" large="12").bg-dark-gray
+                                row
+                                    columns(small="12" large="12")
+                                        p.article_subtitle ANDREW KNOTT
+                                        span.article_header--primary Message from A.K
+                                row
+                                    columns(small="12" large="12")
+                                        p Hi Team, 
+                                        p We’re now two weeks into our new Marketing world and on our journey to become a world class marketing team. We’ve entered an ambitious, busy and very exciting time. There is a lot for us to do to embed the new structure and I know how hard you’re all working to make this a reality. 
+                                        p In a lot of ways we’re the ‘Swiss cheese’ organisation.  We’re well formed, but we have our holes. Filling the key gaps is one of my critical priorities. 
+                                        p I know that many of you are being asked to wear more than one hat at the moment. It’s a credit to the culture of our team and our people that so many are taking up this challenge - and it’s not going unnoticed. 
+
+                        //- End row
+                        +back-to-top
+
+
+        .accordion
+            <!--[if !mso]>
+            <!-- --><input type="checkbox" id="radio-2" style="display: none !important" class="hide" checked="">
+            <!--<![endif]-->
+            label(for="radio-2")
+                wrapper.article_header_container
+                    row
+                        //- Article Header
+                        columns(small="12" large="12").article_header_wrap
+                            row
+                                columns(small="12" large="12")
+                                    table
+                                        tr
+                                            td(valign="middle")
+                                                a(href="#article_02" target="_self").article_header.
+                                                    RIDING THE AGILE WAVE
+                                            td(valign="middle").set-width
+                                                div.title.hide
+                                                    spacer(size="10")
+                                                    img(src="{{data.img_dir}}/arrow-down.png")
+                            row
+                                columns(small="12" large="12").collapse
+                                    a(href="#article_02" target="_self")
+                                        span.article_link.
+                                            <span class=highlight>READ ARTICLE</span> / 4.5 MIN READ
+            .m-collapsed
+               .animated.bounceInDown
+                    //- Article
+                    wrapper
+                        row.collapse.bg-dark-gray
+                            columns(small="12" large="12")
+                                //- INTERNAL ANCHOR
+                                a(name="article_02")
+                                //-
+                                img(src="{{data.img_dir}}/article-02.jpg")
+                        row
+                            columns(small="12" large="12").bg-dark-gray
+                                row
+                                    columns(small="12" large="12")
+                                        p.article_subtitle Laura Wilson
+                                        span.article_header--primary RIDING THE AGILE WAVE
+                                row
+                                    columns(small="12" large="12")
+                                        p Marketing is abuzz with talk of Agile.  But what does ‘working Agile’ really mean for our teams.  Head of Consumer Marketing Programs, Laura Wilson, is excited about the opportunity ahead.  “The clarity, the volume of delivery, the pace, the continuous improvements, the wins and moments to celebrate as a team, the collaboration, the shared goals and objectives, the simplicity, the flexibility – so many things,” says Laura.
+
+
+
+                        //- End row
+
+                        +back-to-top
+
+
+        .accordion
+            <!--[if !mso]>
+            <!-- --><input type="checkbox" id="radio-3" style="display: none !important" class="hide" checked="">
+            <!--<![endif]-->
+            label(for="radio-3")
+                wrapper.article_header_container
+                    row
+                        //- Article Header
+                        columns(small="12" large="12").article_header_wrap
+                            row
+                                columns(small="12" large="12")
+                                    table
+                                        tr
+                                            td(valign="middle").text
+                                                a(href="#article_03" target="_self").article_header.
+                                                    The Story Behind the Campaign:
+                                                    <br/>NAB QuickBiz Loan
+                                            td(valign="middle").set-width
+                                                div.title.hide
+                                                    spacer(size="10")
+                                                    img(src="{{data.img_dir}}/arrow-down.png")
+                            row
+                                columns(small="12" large="12").collapse
+                                    a(href="#article_03" target="_self")
+                                        span.article_link.
+                                            <span class=highlight>READ ARTICLE</span> / 3 MIN READ
+            .m-collapsed
+                .animated.bounceInDown
+                    //- Article
+                    wrapper
+                        row.collapse.bg-dark-gray
+                            columns(small="12" large="12")
+                                //- INTERNAL ANCHOR
+                                a(name="article_03")
+                                //-
+                                img(src="{{data.img_dir}}/article_header3.jpg")
+                        row
+                            columns(small="12" large="12").bg-dark-gray
+                                row
+                                    columns(small="12" large="12")
+                                        p.article_subtitle Simon O’Connor
+                                        p.article_header--primary The Story Behind the Campaign: NAB QuickBiz Loan
+                                row
+                                    columns(small="12" large="12")
+                                        p Simon O’Connor shares the background to the NAB QuickBiz Loan Campaign, and talks “going Agile” before he and the team knew what Agile was!
+
+                                        strong The opportunity
+                                        p Marry the pace and passion of a start-up with the marketing muscle of a big four bank.
+
+
+                        //- End row
+                        +back-to-top

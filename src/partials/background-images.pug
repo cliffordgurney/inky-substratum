@@ -1,0 +1,64 @@
+include ../assets/_pug-mixins
+
+//- Background Example
+wrapper.header.bg-grey
+    container.header-bg
+        table(cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="{{grey}}")
+            tr
+                td(background="{{data.unsplash_daily}}" bgcolor="{{grey}}" valign="middle" width="640" height="320").bg-img
+                    <!--[if gte mso 9]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:320px;">
+                    <v:fill type="tile" src="{{data.unsplash_daily}}" color="{{grey}}" />
+                    <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+                        div
+                            row.collapse
+                                columns(small="12" large="12").collapse
+                                    +able    
+                                        tr
+                                            td(width="110").l-linearise.logo-container
+                                                img(src="{{data.img_dir}}logo_white.png" width="100").logo
+                    <!--[if gte mso 9]>
+                    </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+
+
+wrapper.header.bg-white
+    container
+        //- Anchor tag example
+        a(name="top")
+
+        //- Background Tile Examples
+        row.collapse.bg-dark-grey
+            columns(small="12" large="6" valign="middle").collapse.custom_height
+                +able.custom_height
+                    tr
+                        td(style="height:40px").hide-for-large
+                    tr
+                        td(valign="middle")
+                            h4.text-center Centered
+                            h5.text-center Text
+
+            columns(small="12" large="6").collapse.bg-dark-gray
+                table(cellpadding="0" cellspacing="0" border="0" width="100%")
+                    tr
+                        td(background="{{data.unsplash}}" bgcolor="#dddddd" valign="middle" width="320" height="320").bg-img
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:320px;height:320px;">
+                            <v:fill type="tile" src="{{data.unsplash}}" color="{{black}}" />
+                            <v:textbox inset="0,0,0,0">
+                            <![endif]-->
+                                div
+                                    row.collapse
+                                        columns(small="12" large="6" valign="middle").collapse.custom_height
+                                            +able
+                                                tr
+                                                    td(style="height:140px").hide-for-large
+                                                tr
+                                                    td(valign="middle")
+                                                        h4.text-center.text-white Overlaid Text On Image
+                            <!--[if gte mso 9]>
+                            </v:textbox>
+                            </v:rect>
+                            <![endif]-->

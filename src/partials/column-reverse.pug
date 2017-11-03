@@ -1,0 +1,31 @@
+include ../assets/_pug-mixins
+//- Columns Reversal
+wrapper.bg-black
+    container.bg-black
+        row
+            columns(small="12" large="12").text-center
+                spacer(size="30")
+
+                //- Example of swapping out headings on mobile using Inky 2 syntax
+                div.show-for-large
+                    h2 Really Long Desktop Heading!
+                <!--[if !mso]> -->
+                div.hide-for-large
+                    h2.text-center Mobile Heading!
+                <!-- <![endif]-->
+
+                spacer(size="10")
+
+        //- NOTE:
+            - Structure columns in the order that you want them to appear on mobile
+                - In this example we want the text ontop on mobile and image underneath
+            - The attribute RTL will reverse the order of the table cells on desktop while the LTR attributes on the columns will make sure the text displays in the right direction
+        row(dir="rtl")
+            columns(small="12" large="6" dir="ltr")
+                p.small-text-center This will appear on the right on desktop! Then #[i left] on mobile to be above the image.
+                spacer(size="14")
+                button(href="#").small-float-center Find out more
+
+            columns(small="12" large="6" dir="ltr")
+                img(src="{{data.unsplash_nature}}" width="261").float-center
+                spacer(size="40")

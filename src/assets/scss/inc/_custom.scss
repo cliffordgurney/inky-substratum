@@ -1,0 +1,97 @@
+
+
+// Custom Styling
+// Override defaults
+// -----------------------------------
+
+p,
+li {
+	line-height: 26px;
+}
+strong {
+	font-weight: bold;
+}
+ul,
+ol {
+	padding-left: 30px;
+}
+
+.view-online {
+	padding-top: 14px;
+	padding-bottom: 12px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 12px;
+	text-align: center;
+	a {
+		font-weight: normal;
+		text-decoration: underline;
+		color: $black;
+	}
+}
+
+.header-image {
+	width: 600px;
+	max-width: 600px;
+
+	@media screen and (max-width: $global-breakpoint) {
+		width: 100% !important;
+		max-width: 100%;
+	}
+}
+.logo-container {
+	padding: 10px;
+}
+.logo {
+	width: 100px;
+	max-width: 100px;
+}
+.btn {
+	width: 246px;
+	max-width: 246px;
+	@media screen and (max-width: $global-breakpoint) {
+		width: 100% !important;
+		max-width: 246px !important;
+	}
+}
+
+.custom_height {
+	height: 320px;
+}
+
+.text-white {
+	color: $white;
+}
+
+
+//
+// Footer
+// --------------------------------------
+
+.footer {
+	padding-top: 20px;
+	
+    strong {
+		font-size: 18px;
+    }
+    p {
+		font-size: 14px;
+    }
+    a {
+		color: $primary-color;
+    	text-decoration: underline;
+	}
+}
+.footer-image {
+	width: 249px;
+	@media screen and (max-width: $global-breakpoint) {
+		width: 100% !important;
+		max-width: 249px !important;
+	}
+}
+
+.unsubscribe {
+	color: $pumice;
+	text-decoration: underline;
+	font-size: 12px;
+}

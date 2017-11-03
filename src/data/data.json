@@ -1,0 +1,9 @@
+
+{
+	"img_dir": "assets/img/",
+	"subject": "Insert email subject",
+	"description": "Insert email description",
+	"unsplash": "https://source.unsplash.com/user/erondu",
+	"unsplash_daily": "https://source.unsplash.com/daily",
+	"unsplash_nature": "https://source.unsplash.com/category/nature/weekly"
+}
