@@ -1,6 +1,6 @@
 {
   "name": "inky-substratum",
-  "version": "1.1.2",
+  "version": "1.0",
   "description": "A mordern way to create PUG empowered Inky Foundation templates for creating beautiful, reusable HTML email templates without coding like it's 1999.",
   "repository": "cliffordgurney/inky-substratum",
   "main": "gulpfile.babel.js",
