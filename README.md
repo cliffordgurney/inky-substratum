@@ -1,5 +1,5 @@
 # Inky Substratum
-> A mordern way to create PUG empowered Inky Foundation templates for creating beautiful, reusable HTML email templates without `coding like it's 1999`.
+> A mordern way to create beautiful, reusable HTML email templates using the Zurb Foundation framework with PUG syntax.
 
 [![Dependency Status](https://david-dm.org/zurb/foundation-emails-template/status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=Dependencies)
 [![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
